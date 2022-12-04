@@ -1,0 +1,265 @@
+.hide {
+    display: none !important;
+}
+
+.button {
+    background-color: rgb(60,176,165);
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#backgroundImage {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+}
+
+#openStoreButton {
+    border: none;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+}
+
+#openPocketsButton {
+    border: none;
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+}
+
+#nameSection {
+    box-sizing: border-box;
+    bottom: 20px;
+    position: absolute;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+#nameInput {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#nameSubmit {
+    margin-left: 10px;
+    border: none;
+}
+
+#clearName {
+    margin-left: 10px;
+    border: none;
+}
+
+#characterName{
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform:rotate(7deg);
+    animation: open .5s;
+}
+
+/* Store View  */
+#storeViewSection {
+    display: flex ;
+    
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    /* border: 1px solid red; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: open .45s forwards;
+}
+
+#buyAndSellHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    width: 70%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buyAndSell {
+    background-color: rgb(60,176,165);
+    color: white;
+    border: 10px solid rgb(60,176,165);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#storeView {
+    height: 85%;
+    width: 90%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#storeSide {
+    width: 40%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+}
+
+#storeSideInner {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.itemContainer {
+    color: white !important;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemImage {
+    width: 80px;
+    cursor: pointer;
+}
+
+#closeStoreButton {
+    border: 10px solid wheat;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+#pocketsSide {
+    width: 40%;
+    height: 90%;
+    background-color: wheat;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+#pocketsSideInner {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+/* Pockets View  */
+
+#pocketsViewSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    padding: 20px;
+    animation: open .45s;
+}
+
+#pocketsView {
+    height: 60%;
+    width: 50%;
+    border-radius: 15%;
+    padding: 50px;
+    background-color: wheat;
+    overflow: hidden;
+}
+
+#pocketsViewInner {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.pocketItemContainer {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pocketItem {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 50px;
+}
+
+#clearPocketsButton {
+    border: 10px solid wheat;
+    position: absolute;
+    bottom: 150px;
+    right: 350px;
+}
+
+#closePocketsButton {
+    border: 10px solid wheat;
+    position: absolute;
+    top: 140px;
+    right: 450px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+/* Animations */
+
+@keyframes open {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+

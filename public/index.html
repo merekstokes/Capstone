@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js%22%3E"></script>
+        <title>Animal Crossing - Capstone</title>
+    </head>
+    <body>
+        <div id="main">
+            <img alt="" id="backgroundImage" src="https://iili.io/HBlONf9.jpg"/>
+        <form id="nameSection">
+            <div>Name Your Character: </div>
+            <input id="nameInput" type="text"/>
+            <button id="nameSubmit" class="button">Submit</button>
+            <button id="clearName" class="button">Clear</button>
+        </form>
+        <div id="characterName"></div>
+        <div id="pocketsSection">
+            <button id="openPocketsButton" class="button">Open Pockets</button>
+            <div id="pockets"></div>
+        </div>
+        <div id="storeSection">
+            <button id="openStoreButton" class="button">Open Store</button>
+            <div id="store"></div>
+        </div>
+    </div>
+    <div id="storeViewSection">
+        <div id="buyAndSellHeader">
+            <div class="buyAndSell">Click to Buy Item</div>
+            <div class="buyAndSell">Click to Sell Item</div>
+        </div>
+        <button id="closeStoreButton" class="button"> X </button>
+        <div id="storeView">
+            <div id="storeSide">
+                <div id="storeSideInner">
+                <div class="itemContainer">
+                    <!-- <div>Shovel</div> -->
+                    <img class="itemImage" src="https://iili.io/HqhkDl9.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Fishing Pole</div> -->
+                    <img class="itemImage" src="https://iili.io/HqhvmqN.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Bug Net</div> -->
+                    <img class="itemImage" src="https://dodo.ac/np/images/9/90/Net_%28Red%29_NH_Icon.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Watering Can</div> -->
+                    <img class="itemImage" src="https://dodo.ac/np/images/d/d5/Colorful_Watering_Can_%28Yellow%29_NH_Icon.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Slingshot</div> -->
+                    <img class="itemImage" src="https://iili.io/HqhSTFI.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Axe</div> -->
+                    <img class="itemImage" src="https://dodo.ac/np/images/f/fa/Axe_NH_Icon.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Peach Umbrella</div> -->
+                    <img class="itemImage" src="https://iili.io/HqhrJ6l.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Froggy Chair</div> -->
+                    <img class="itemImage" src="https://iili.io/HqhiMss.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Apple</div> -->
+                    <img class="itemImage" src="https://iili.io/HBcdgxR.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Pear</div> -->
+                    <img class="itemImage" src="https://iili.io/HBcnfVa.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Orange</div> -->
+                    <img class="itemImage" src="https://iili.io/HBcBRet.png"/>
+                </div>
+                <div class="itemContainer">
+                    <!-- <div>Cherries</div> -->
+                    <img class="itemImage" src="https://iili.io/HqhiWqG.png"/>
+                </div>
+            </div>
+            </div>
+            <div id="pocketsSide">
+                <div id="pocketsSideInner">
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+                    <div class="pocketItemContainer">
+                        <div class="pocketItem"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pocketsViewSection">
+        <button id="closePocketsButton" class="button"> X </button>
+        <div id="pocketsView">
+            <div id="pocketsViewInner">
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+                <div class="pocketItemContainer">
+                    <div class="pocketItem"></div>
+                </div>
+            </div>
+        </div>
+        <button id="clearPocketsButton" class="button">Clear Pockets</button>
+    </div>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
