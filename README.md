@@ -11,6 +11,7 @@ This project is an Animal Crossing themed app using Javascript, HTML, and CSS. I
 - CSS
 - Axios
 - Express
+- cors
 
 ## Features
 
