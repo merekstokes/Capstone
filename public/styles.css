@@ -83,7 +83,9 @@
         width: 60%;
         background-color: wheat;
         border-radius: 50px;
-        top: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #storeViewSection {
         display: flex ;
@@ -160,6 +162,10 @@
         align-items: center;
         /* border: 1px solid red; */
     }
+    #pocketsSideInnerRenderedItems {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .clickToBuyOrSell {
         background-color: white;
         position: relative;
@@ -217,6 +223,19 @@
         flex-wrap: wrap;
         overflow: hidden;
         justify-content: space-between;
+    }
+
+    #pocketsViewInnerRenderedItems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .renderedItem {
+        width: 100px;
+    }
+
+    .renderedItemImage {
+        width: 100px;
     }
     
     .pocketItemContainer {
