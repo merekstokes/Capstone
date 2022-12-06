@@ -2,13 +2,15 @@
 
 ## Description of project
 
-This project is an Animal Crossing themed app using Javascript, HTML, and CSS. You are able to open your pockets, open the store (Nook's Cranny), and buy items from Nook's Cranny. You can also name your character and reset your name.
+This project is an Animal Crossing themed app using Javascript, HTML, and CSS. In this app you are able to open your pockets, open the store (Nook's Cranny), and buy items from Nook's Cranny that are then added into your pockets. You can also name your character and reset your name. The buttons to open your pockets, open the store, and buy an item from the store are listening for a click event, which calls an Axios request to the `items.js` file to handle the items.
 
 ## Technologies
 
+- HTML
+- Javascript
+- CSS
 - Axios
 - Express
-- Cors
 
 ## Features
 
@@ -23,14 +25,14 @@ This project is an Animal Crossing themed app using Javascript, HTML, and CSS. Y
 
 ### Desktop View
 
-!(https://iili.io/HC8uXdG.png)
+<img src="https://iili.io/HC8uXdG.png" alt="">
 
-!(https://iili.io/HC8uVgs.png)
+<img src="https://iili.io/HC8uVgs.png" alt="">
 
-!(https://iili.io/HC8uh7f.png)
+<img src="https://iili.io/HC8uh7f.png" alt="">
 
 ### Mobile View
 
-!(https://iili.io/HC8uM1n.png)
+<img src="https://iili.io/HC8uM1n.png" alt="">
 
-!(https://iili.io/HC8uje4.png)
+<img src="https://iili.io/HC8uje4.png" alt="">
